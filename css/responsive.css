@@ -1,0 +1,44 @@
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+	.about,.contact-form  {
+    	margin-top: 50px;
+	}
+	
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+	.services-tab .nav li a{
+		padding: 10px
+	}
+	.service-img{
+		padding: 20px;
+	}
+	.service-img  img {
+		width: 100%;
+	}
+	.service-content {
+		margin-top: 30px;
+		padding-left: 10px;
+	}
+	.project-list{
+		text-align: center;
+	}
+	.populer-blog-post,.twitter-post,.about,.contact-form{
+		margin-top: 50px;
+	}
+	.copyrights p{
+		text-align: center;
+	}
+	.social-link {
+		margin-top: 10px;
+		text-align: center;
+	}
+}

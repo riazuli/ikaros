@@ -1,0 +1,372 @@
+/* Base CSS */
+* {
+	margin: 0px;	
+	padding: 0px
+}
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+
+
+@font-face {
+	font-family: 'Aller-Light';
+	src: url('fonts/Aller-Light.eot?#iefix') format('embedded-opentype'),  url('fonts/Aller-Light.woff') format('woff'), url('fonts/Aller-Light.ttf')  format('truetype'), url('fonts/Aller-Light.svg#Aller-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aller-Bold';
+	src: url('fonts/Aller-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/Aller-Bold.woff') format('woff'), url('fonts/Aller-Bold.ttf')  format('truetype'), url('fonts/Aller-Bold.svg#Aller-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { height: 100%;}
+body {
+	background: #fcfcfc;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 14px;
+	color: #555555;
+	font-weight: 400;
+}
+a:hover { text-decoration: none }
+.container{
+	max-width: 960px;
+}
+.section-padding{
+	padding: 50px 0px;
+}
+.section-heading h2 {
+    color: #555555;
+    font-size: 30px;
+	font-family: 'Aller-Bold', sans-serif;
+}
+.section-heading p {
+    font-size: 20px;
+	font-family: 'Aller-Light', sans-serif;
+}
+.section-heading {
+    margin-bottom: 35px;
+}
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/*Header Area CSS*/
+
+.header-top {
+    background: #393c3f;
+}
+.menu-list ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+#menu li {
+    display: inline-block;
+}
+#menu li a {
+	font-family: 'Aller-Bold', sans-serif;
+    color: #d4d4d4;
+    display: block;
+    font-size: 12px;
+    padding: 50px 25px 35px;
+    text-transform: uppercase;
+}
+.header-top .logo {
+    padding: 30px 0;
+}
+#menu li a.active {
+    background: #343639;
+}
+#menu li a:hover {
+    color: #86acc4;
+}
+
+/** Mobile Menu Style**/
+.slicknav_menu {
+	display:none;
+}
+.slicknav_nav a {
+	font-family: 'Aller-Bold', sans-serif;
+	text-align: right;
+	text-transform: uppercase;
+	color: #d4d4d4;
+}
+.slicknav_nav a:hover {
+    background: none;
+    color: #86acc4;
+}
+
+/** Slider Area CSS**/
+
+.welcome-slider{
+	margin-bottom: 10px;
+} 
+.welcome-carousel {
+	position: relative;
+	margin-top: 50px;
+	
+}
+.welcome-carousel .single-item-1{
+	background: url(img/slider-img-1.jpg) scroll center center /cover;
+	height: 450px;
+}
+
+.welcome-carousel .single-item-2{
+	background: url(img/slider-img-2.jpg) scroll center center /cover;
+	height: 450px;
+}
+
+.left.welcome-control {
+    background: #f2f2f2;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 18px;
+    height: 38px;
+    left: 10px;
+	margin-top: -19px;
+    line-height: 38px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 38px;
+}
+
+
+.right.welcome-control {
+    background: #f2f2f2 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 18px;
+    height: 38px;
+    right: 10px;
+    line-height: 38px;
+	margin-top: -19px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 38px;
+}
+
+/* Service Area CSS */
+.nav-tabs {
+    text-align: center;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #c4c4c4;
+}
+.nav-tabs li{
+	float: none;
+	display: inline-block;
+}
+.nav-tabs li a{
+	font-family: 'Aller-Bold', sans-serif;
+	font-size: 14px;
+	border-radius: 0px;
+	color: #555555;
+	border-color: #c4c4c4 #c4c4c4 transparent;
+	margin-right: -5px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background-color: #fcfcfc;
+    border-color: #c4c4c4 #c4c4c4 transparent;
+    color: #6a98b5;
+}
+.service-content h3{
+	font-family: 'Aller-Bold', sans-serif;
+	font-size: 17px;
+	color: #545454;
+}
+.service-content span i {
+    color: #76a2bf;
+    margin-right: 5px;
+}
+
+/*Portfolio Area CSS*/
+
+.portfolio-area{
+	position: relative;
+}
+.single-project {
+    cursor: pointer;
+    margin-top: 25px;
+}
+.portfolio-area:after,.blog-area:after{
+	background: url(img/border-pattern.png) repeat-x scroll 0 0;
+	width: 70%;
+	height: 3px;
+	position: absolute;
+	left: 15%;
+	bottom: 0px;
+	margin: 0px auto;
+	content: "";
+}
+
+/** Blog Area CSS**/
+.blog-area{
+	position: relative;
+}
+.single-post {
+    margin-top: 40px;
+}
+
+.post-detail h3 {
+    font-size: 17px;
+	font-family: 'Aller-Bold', sans-serif;
+}
+.blog-date {
+	font-family: 'Aller-Bold', sans-serif;
+    background: #ebebeb;
+    border-radius: 50%;
+    height: 70px;
+    text-align: center;
+    width: 70px;
+}
+
+.blog-date h2{
+	font-size: 20px;
+	padding-top: 10px;
+	margin: 0px;
+}
+.blog-date h3{
+	font-size: 17px;
+	margin: 0px;
+	text-transform: uppercase;
+}
+
+.blog-links  p {
+    color: #6b99b6;
+}
+.blog-links a {
+    color: #6b99b6;
+}
+
+/* Featured Area CSS*/
+
+.featured-area {
+    background: #393c3f;
+    color: #bfbfbf;
+	line-height: 25px;
+}
+.featured-area h3 {
+    color: #e3e3e3;
+    font-size: 16px;
+    text-transform: uppercase;
+	font-family: 'Aller-Bold', sans-serif;
+	margin-bottom: 15px;
+}
+.single-blog-post,.single-twit{
+	position: relative;
+	margin: 15px 0px;
+}
+
+.single-twit i {
+    margin-right: 8px;
+}
+.single-twit a {
+    color: #7796aa;
+}
+.single-blog-post p span{
+    color: #899096;
+}
+input[type="text"], input[type="email"] {
+    background: #272a2c;
+    border:none;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+textarea {
+    background: #272a2c;
+    border: 0 none;
+    min-height: 138px;
+    resize: none;
+    width: 100%;
+}
+input[type="submit"] {
+    background: #6c8a9d;
+    border: medium none;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 8px 30px;
+}
+
+/*** Footer Area CSS**/
+
+.footer {
+	background: #2e3134 none repeat scroll 0 0;
+	color: #a3a3a4;
+	padding: 20px 0;
+}
+.copyrights a {
+    color: #7796aa;
+}
+.social-link {
+    text-align: right;
+}
+.social-link a i {
+    color: #ffffff;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 5px;
+    text-align: center;
+    width: 26px;
+}
+.social-link .fa.fa-rss {
+    background: #f78f30 ;
+}
+.social-link .fa.fa-facebook {
+    background: #39599d ;
+}
+.social-link .fa.fa-twitter {
+    background: #45afe2 ;
+}
+.social-link .fa.fa-dribbble {
+    background: #d87aaf;
+}
+.social-link .fa.fa-pinterest {
+    background: #cb212b;
+}
+.social-link .fa.fa-linkedin {
+    background: #548fe2;
+}
+
+.social-link a i:hover {
+    color: #cce9d4;
+}
+
+
